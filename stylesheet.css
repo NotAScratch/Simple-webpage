@@ -1,8 +1,13 @@
+body {
+    background-color: lightblue;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     position: relative;
+    background-color: #003366; /* Darker shade of blue for nav bar */
 }
 
 nav ul li {
@@ -13,6 +18,7 @@ nav a {
     color: black;
     text-decoration: none;
     padding: 14px 16px;
+    font-weight: bold; /* Use bold text */
 }
 
 nav a:hover {
@@ -27,7 +33,7 @@ nav a.active {
 
 nav a.dropbtn {
     background-color: #333;
-    color: white;
+    color: gold; /* Use gold text */
     padding: 14px 16px;
     font-size: 16px;
     border: none;
