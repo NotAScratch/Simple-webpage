@@ -6,21 +6,39 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><button onclick="openModal()">Contact</button></li>
-        </ul>
+        
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#form">Contact</button>
+        
     </nav>
 
     <h1>Welcome to the Home Page</h1>
     <p>This is the content of the home page.</p>
-
+    <!-- add a contact us section in the bottom right corner of the page -->
     <div class="scroll-pane">
         <h2>Services</h2>
         <p>This is the content of the services section.</p>
-    
+        
     </div>
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <h2>Contact Us</h2>
+            <!-- add a form to sumbit name and email to contact -->
+            <form>
+                <div id="contact-modal" class="modal">
+                    <div class="modal-content">
+                        <h2>Contact Us</h2>
+                        <!-- add a form to sumbit name and email to contact -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+            
 
     <script>
    
