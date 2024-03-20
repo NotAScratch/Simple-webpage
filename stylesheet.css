@@ -1,8 +1,10 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(217, 223, 225);
 }
-
 nav ul {
+    /* align-items: right; */
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -15,7 +17,7 @@ nav ul li {
 }
 
 nav a {
-    color: black;
+    color: rgb(19, 70, 117);
     text-decoration: none;
     padding: 14px 16px;
     font-weight: bold; /* Use bold text */
@@ -40,35 +42,30 @@ nav a.dropbtn {
     cursor: pointer;
 }
 
+/* Define the dropdown container */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
+/* Define the button that triggers the dropdown menu */
+.dropdown .dropbtn {
+    background-color: #4CAF50;
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
+/* Add a hover effect to the button */
+.dropdown .dropbtn:hover {
     background-color: #3e8e41;
+}
+.about-section {
+    background-image: url('path/to/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
 }
